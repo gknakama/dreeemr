@@ -40,12 +40,9 @@
     </div>
   </div>
 </nav>
-  
-  <div class="container">
-  
-  <div class="jumbotron">
-	<img class="img-responsive" src="images\dreeemr_banner.png" alt="dreeemr banner">
-  </div>
+	<div class="jumbotron">
+		<img class="img-responsive" src="images\dreeemr_banner.png" alt="dreeemr banner">
+	</div>
 
   	<div class="row">
 		  <h3>Staff picks:</h3> 
@@ -75,8 +72,6 @@
 		</a>
 	  </div>
 	</div>
-  
-
   </div>
 
 </body>
@@ -90,6 +85,75 @@
 
     <span class="text"><strong>{{username}}</strong> - {{text}}</span>
   </li>
+</template>
+
+<template name="homepage">
+	<div class="search_bar container">
+		<form class="form-search">
+			<div class="col-lg-6">
+				<div class="input-group">
+				  <input type="text" class="form-control" placeholder="Search for...">
+				  <span class="input-group-btn">
+					<a href="#" class="btn btn-info btn-s"><span class="glyphicon glyphicon-search"></span></a>
+				  </span>
+				</div>
+			</div>
+		</form>
+	</div>
+	<br/>
+	<div class="container">
+		<h2>Current Dreams:</h2>
+		<div class="row-fluid">
+			<div class="col-md-2">
+				<img src="images/dream1_halfmarathon.png" alt="Dream Pic" height="180" width="240">
+			</div>
+			<div class="col-md-10">
+				<h3>Run a Half-Marathon</h3>
+				<p>I would like to run a half-marathon this year so that I exercise more frequently and eat healthier.</p>
+				<p>Progress:
+				<div class="progress">
+					<div class="progress-bar" role="progressbar" aria-valuenow="70"
+						aria-valuemin="0" aria-valuemax="100" style="width:70%">
+						70%
+					</div>
+				</div>
+				</p>
+			</div>
+		</div>
+		<div class="row-fluid">
+			<div class="col-md-2">
+				<img src="images/dream2_paris.png" alt="Dream Pic" height="180" width="240">
+			</div>
+			<div class="col-md-10">
+				<h3>Travel to Paris</h3>
+				<p>I've always wanted to travel to Paris, France.  Would love to see the Effel tower and ride a bicycle down the streets of France.</p>
+				<p>Progress:
+				<div class="progress">
+					<div class="progress-bar" role="progressbar" aria-valuenow="20"
+						aria-valuemin="0" aria-valuemax="100" style="width:20%">
+						20%
+					</div>
+				</div>
+				</p>
+			</div>
+		<div class="row-fluid">
+			<div class="col-md-2">
+				<img src="images/dreams3_cooking.png" alt="Dream Pic" height="180" width="240">
+			</div>
+			<div class="col-md-10">
+				<h3>Learn to Cook</h3>
+				<p>My dream is to learn to cook the recipes like my mother makes.  I would love to cook, but just don't have the time to invest in learning.</p>
+				<p>Progress:
+				<div class="progress">
+					<div class="progress-bar" role="progressbar" aria-valuenow="50"
+						aria-valuemin="0" aria-valuemax="100" style="width:50%">
+						50%
+					</div>
+				</div>
+				</p>
+			</div>
+		</div>
+	</div>
 </template>
 
 <template name="create_event">
