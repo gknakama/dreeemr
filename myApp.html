@@ -91,3 +91,52 @@
     <span class="text"><strong>{{username}}</strong> - {{text}}</span>
   </li>
 </template>
+
+<template name="create_event">
+	<h1>What is your dream?</h1>
+	<form role="form" class="form-horizontal">
+		<div class="form-group">
+			<div class="col-sm-8">
+				<label for="event_name">Dream Name:</label>
+				<input type="text" class="form-control" name="dream_name">
+			</div>
+		</div>
+		<div class="form-group">
+			<div class="col-sm-2">
+				<label for="event_date">Due Date:</label>
+				<input type="date" class="form-control" name="event_date">
+			</div>
+			<div class="col-sm-2">
+				<label for="category_select">Category:</label>
+				<select class="form-control" name="category_select">
+					<option>Adventure</option>
+					<option>Education</option>
+					<option>Family</option>
+					<option>Career</option>
+					<option>Volunteer</option>
+					<option>Travel</option>
+					<option>Finance</option>
+					<option>Spiritual</option>
+					<option>Fitness</option>
+					<option>Community</option>
+					<option>Business</option>
+					<option>OTHER</option>
+				</select>
+			</div>
+		</div>
+		<div class="form-group">
+			<div class="col-sm-6">
+			<label for="upload_pic">Upload a Photo</label>
+			<input type="file" name="upload_pic" accept="image/*">
+			</div>
+		</div>
+		<div class="form-group">
+			<div class="col-sm-8">
+				<label for="description">Description:</label>
+				<textarea class="form-control" name="description" placeholder="Why is this dream important to you?"></textarea>
+			</div>
+		</div>
+		<a href="#">Cancel</a>
+		<button type="submit" class="btn btn-default">Create Dream</button>
+	</form>
+</template>
