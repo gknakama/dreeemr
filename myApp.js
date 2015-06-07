@@ -56,4 +56,12 @@ if (Meteor.isClient) {
   Accounts.ui.config({
     passwordSignupFields: "USERNAME_ONLY"
   });
+
+	Router.route('/', function () {
+	  this.render('Home');
+	});
+	
+	Router.route('/create_event', function () {
+	  this.render('create_event');
+	});
 }
