@@ -64,4 +64,8 @@ if (Meteor.isClient) {
 	Router.route('/create_event', function () {
 	  this.render('create_event');
 	});
+
+	Router.route('/discover', function () {
+	  this.render('discover');
+	});
 }

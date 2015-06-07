@@ -1,6 +1,5 @@
-
 <head>
-  <title>Dreeemr</title>
+  <title>Dreamr</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
@@ -9,74 +8,40 @@
 </head>
 <body>
 
-<nav class="navbar navbar-inverse">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>                        
-      </button>
-      <a class="navbar-brand" href="#">Dreeemr</a>
-    </div>
-    <div class="collapse navbar-collapse" id="myNavbar">
-      <ul class="nav navbar-nav">
-        <li class="active"><a href="/">Home</a></li>
-        <li class="dropdown">
-          <a class="dropdown-toggle" data-toggle="dropdown" href="/create_event">Discover <span class="caret"></span></a>
-        </li>
-        <li><a href="#">Start</a></li>
-        <li><a href="#">Search</a></li>
-      </ul>
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
-        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+	<nav class="navbar navbar-inverse">
+	  <div class="container-fluid">
+<!--		<div class="navbar-header">
+		  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+		  </button>
+		  <a class="navbar-brand" href="/">Dreamr</a>
+		</div>
+-->
+		<div class="collapse navbar-collapse" id="myNavbar">
+		  <ul class="nav navbar-nav">
+			<li class="logo active"><a href="/">Dreamr<!--<img src="/images/dreamr_logo.png" alt="Dreamr" style="margin:0px 0px">--></a></li>
+<!--			<li class="active"><a href="/">Home</a></li>	-->
+			<li class="active"><a href="/discover">Discover</a></li>
+			<li class="active"><a href="/create_event">Create</a></li>
+		  </ul>
+		  <ul class="nav navbar-nav navbar-right">
+			<li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+			<li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
 
-	  {{> loginButtons}}
-	
-	  </ul>
-	  
-	  
-    </div>
-  </div>
-</nav>
+<!--		  {{> loginButtons}}	-->
+		
+		  </ul>
+		  
+		  
+		</div>
+	  </div>
+	</nav>
 
+<!--	{{> splash}}	-->
 <!--	{{> Home}}	-->
 <!--	{{> create_event}}	-->
-
-	<div class="jumbotron">
-		<img class="img-responsive" src="images\dreeemr_banner.png" alt="dreeemr banner">
-	</div>
-
-  	<div class="row">
-		  <h3>Staff picks:</h3> 
-	  <div class="col-md-4">
-		<a href="images\business.gif" class="thumbnail">
-		  <img src="images\business.gif" alt="Pulpit Rock" style="width:150px;height:150px">
-		</a>
-	  </div>
-	</div>
-
-
-	<div class="row">
-		  <h3>Popular Dreams:</h3> 
-	  <div class="col-md-4">
-		<a href="images\business.gif" class="thumbnail">
-		  <img src="images\business.gif" alt="Pulpit Rock" style="width:150px;height:150px">
-		</a>
-	  </div>
-	  <div class="col-md-4">
-		<a href="images\marathon.jpg" class="thumbnail">
-		  <img src="images\marathon.jpg" alt="Moustiers Sainte Marie" style="width:150px;height:150px">
-		</a>
-	  </div>
-	  <div class="col-md-4">
-		<a href="images\love.gif" class="thumbnail">
-		  <img src="images\love.gif" alt="Cinque Terre" style="width:150px;height:150px">
-		</a>
-	  </div>
-	</div>
-
 </body>
 
 
@@ -158,6 +123,40 @@
 			</div>
 		</div>
 	</div>
+</template>
+
+<template name="discover">
+	<div class="jumbotron">
+		<img class="img-responsive" src="images\dreeemr_banner.png" alt="dreeemr banner">
+	</div>
+
+  	<div class="row">
+		  <h3>Staff picks:</h3> 
+	  <div class="col-md-4">
+		<a href="images\business.gif" class="thumbnail">
+		  <img src="images\business.gif" alt="Pulpit Rock" style="width:150px;height:150px">
+		</a>
+	  </div>
+	</div>
+
+	<div class="row">
+		<h3>Popular Dreams:</h3> 
+		<div class="col-md-4">
+			<a href="images\business.gif" class="thumbnail">
+				<img src="images\business.gif" alt="Pulpit Rock" style="width:150px;height:150px">
+			</a>
+		</div>
+		<div class="col-md-4">
+			<a href="images\marathon.jpg" class="thumbnail">
+				<img src="images\marathon.jpg" alt="Moustiers Sainte Marie" style="width:150px;height:150px">
+			</a>
+		</div>
+		<div class="col-md-4">
+			<a href="images\love.gif" class="thumbnail">
+				<img src="images\love.gif" alt="Cinque Terre" style="width:150px;height:150px">
+			</a>
+		</div>
+	</div>	
 </template>
 
 <template name="create_event">
